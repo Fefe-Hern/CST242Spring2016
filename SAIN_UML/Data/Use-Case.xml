@@ -1,0 +1,27 @@
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLActor</id><coordinates><x>100</x><y>370</y><w>120</w><h>110</h></coordinates><panel_attributes>[Class] Professor</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>110</x><y>250</y><w>100</w><h>110</h></coordinates><panel_attributes>Student [Unique]</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>240</x><y>250</y><w>200</w><h>110</h></coordinates><panel_attributes>View Student's [Unique] grades, 
+credits taken / required,
+and classes taken / required for 
+major [Major].</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>268</y><w>110</w><h>60</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;90;40</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>230</x><y>460</y><w>210</w><h>130</h></coordinates><panel_attributes>Update Grade
+--
+
+-Update grade of: Student [Unique]
+for class [Class]: (0.0-4.0)
+-Choose to give Student [Unique]
+credit for class [Class]
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>298</y><w>110</w><h>120</h></coordinates><panel_attributes></panel_attributes><additional_attributes>90;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>388</y><w>120</w><h>120</h></coordinates><panel_attributes></panel_attributes><additional_attributes>100;100;10;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>410</x><y>608</y><w>280</w><h>70</h></coordinates><panel_attributes>No Credits
+--
+Update Student [Unique] Classes Taken
+Recalculate GPA average utilizing all taken classes
+symbol=usecase</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>50</x><y>608</y><w>290</w><h>90</h></coordinates><panel_attributes>Give Credits
+--
+Update Student [Unique] Classes Taken / Required
+Update Student [Unique] Credits Taken / Required
+Remove class [Class] if it was required
+Recalculate GPA average utilizing all taken classes
+symbol=usecase</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>508</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>60;10;10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>508</y><w>80</w><h>120</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;10;60;10;60;100</additional_attributes></element><element><id>UMLActor</id><coordinates><x>560</x><y>268</y><w>60</w><h>110</h></coordinates><panel_attributes>Faculty</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>630</x><y>358</y><w>260</w><h>40</h></coordinates><panel_attributes>Register Student to Database
+for major [Major]</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>278</y><w>180</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;155;20</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>288</y><w>210</w><h>90</h></coordinates><panel_attributes></panel_attributes><additional_attributes>15;10;190;70</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>710</x><y>448</y><w>190</w><h>60</h></coordinates><panel_attributes>Generate Classes / Credits
+required for Student [Unique] from 
+major [Major]
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>760</x><y>388</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>655</x><y>280</y><w>270</w><h>50</h></coordinates><panel_attributes>Add class [Class] with amount of credits given</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>575</x><y>280</y><w>100</w><h>40</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>665</x><y>170</y><w>240</w><h>90</h></coordinates><panel_attributes>Add / Edit major [Major] comprised of:
+-required classes
+-total credits required.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>575</x><y>220</y><w>120</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;80;100;10</additional_attributes></element></diagram>
