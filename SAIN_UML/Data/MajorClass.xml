@@ -22,7 +22,7 @@ _-file: File_
 --
 _+add(major:Majors):boolean_
 _+delete(major:Majors):boolean_
-_+acquire(codeName:String):Members_
+_+acquire(codeName:String):Major_
 _+saveToFile():boolean_
 _+loadMajors():boolean_
 _+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element></diagram>
