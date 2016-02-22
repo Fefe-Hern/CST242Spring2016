@@ -1,0 +1,76 @@
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>320</x><y>3</y><w>260</w><h>210</h></coordinates><panel_attributes>Package::datamodel.accounts
+Members
+--
+-userName: String *Key Field
+-password: String
+-name: String
+--
++Members(username:String, password:String,
+  firstName:String, lastName:String)
++getUserName(): String
++getPassword(): String
++setPassword(pass:String): void
++getName():String
++setName(name:String): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>233</y><w>210</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
+Student
+--
+-major: Major
+-gpa: double
+--
++Student(username:String,
+      password:String, firstName:String, 
+      lastName:String, major:Major)
++getMajor(): Major
++setMajor(major:Major): void
++getGPA(): double
++setGPA(number:Double): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>233</y><w>220</w><h>150</h></coordinates><panel_attributes>Package::datamodel.accounts
+Instructor
+--
+-classesTaught: ArrayList&lt;Classes&gt;
+--
++Instructor(username:String,
+      password:String, firstName:String, 
+      lastName:String)
++addClass(theClass:Classes): boolean
++removeClass(theClass:Classes): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>233</y><w>210</w><h>100</h></coordinates><panel_attributes>Package::datamodel.accounts
+Admin
+--
+--
++Admin(username:String,
+      password:String, firstName:String, 
+      lastName:String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>203</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>203</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>203</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>343</y><w>240</w><h>290</h></coordinates><panel_attributes>Package::datamodel.accounts
+MemberController
+--
+-model: Members
+--
++MemberController(model:Members)
++getUserName(): String
++getPassword(): String
++setPassword(pass:String): void
++getName():String
++setName(name:String): void
+
++getMajor(): Major
++setMajor(major:Major): void
++getGPA(): double
++setGPA(number:Double): void
+
+
++addClass(theClass:Classes): boolean
++removeClass(theClass:Classes): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>194</x><y>110</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>110</y><w>100</w><h>30</h></coordinates><panel_attributes>/Serializable/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>423</y><w>250</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
+MemberSaver
+--
+_-memberMap: HashMap&lt;String, Members&gt;_
+_-file: File_
+--
+_+add(member:Members):boolean_
+_+delete(member:Members):boolean_
+_+acquire(username:String):Members_
+_+saveToFile():boolean_
+_+loadMembers():boolean_
+_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element></diagram>

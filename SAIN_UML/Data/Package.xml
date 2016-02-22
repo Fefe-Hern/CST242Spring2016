@@ -1,0 +1,31 @@
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLHierarchy</id><coordinates><x>60</x><y>113</y><w>310</w><h>200</h></coordinates><panel_attributes>type=Package
+SAINReport
+	datamodel 
+		accounts
+		majors
+		classes
+	window</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>390</x><y>113</y><w>160</w><h>340</h></coordinates><panel_attributes>dataModel</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>410</x><y>143</y><w>110</w><h>120</h></coordinates><panel_attributes>accounts
+--
+Members
+Student
+Instructor
+Admin
+MemberController
+MemberSaver
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>410</x><y>273</y><w>110</w><h>70</h></coordinates><panel_attributes>majors
+--
+Major
+MajorSaver
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>410</x><y>353</y><w>100</w><h>70</h></coordinates><panel_attributes>classes
+--
+Classes
+ClassesController
+ClassesSaver
+halign=left</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>550</x><y>113</y><w>110</w><h>140</h></coordinates><panel_attributes>window
+--
+LoginScreen
+StudentSain
+InstructorSain
+AdminSain
+halign=left
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
