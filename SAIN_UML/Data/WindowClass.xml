@@ -1,0 +1,62 @@
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>34</x><y>270</y><w>220</w><h>160</h></coordinates><panel_attributes>lw=2
+LoginScreen
+--
+-userNameLabel: Label
+-userNameTextField: TextField
+-passwordLabel: Label
+-passwordTextField: TextField
+-loginBtn: Button
+-cancelBtn: Button
+-
+_+main(args: String): void_
+_+start(primaryStage: Stage): void_
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>120</y><w>220</w><h>130</h></coordinates><panel_attributes>lw=2
+StudentSain
+--
+-majorLabel: Label
+-gpaLabel: Label
+-classesNeeded: TextArea
+-creditsTaken: Label
+-classesTaken: TextArea
+-
+_+start(primaryStage: Stage): void_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>270</y><w>220</w><h>110</h></coordinates><panel_attributes>lw=2
+InstructorSain
+--
+-classesTaught: TextArea
+-studentTookClass: Button
+-
+_+start(primaryStage: Stage): void_
+_+setStudentClassTaken(student: Student, classes: Classes): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>494</x><y>130</y><w>340</w><h>500</h></coordinates><panel_attributes>lw=2
+AdminSain
+--
+-newNameLabel: Label
+-newNameField: TextField
+-newUserNameLabel: Label
+-newUserNameField: TextField
+-newPassLabel: Label
+-newPassField: TextField
+-newStudentMajorLabel: Label
+-newStudentMajorField: TextField
+-newStudentBtn: Button
+-newInstructorBtn: Button
+-newAdminBtn: Button
+
+-newClassLabel: Label
+-newClassField: Field
+-newClassCreditLabel: Label
+-newClassCreditField: Field
+-newClassBtn: Button
+
+-newMajorLabel: Label
+-newMajorField: Field
+-newMajorBtn: Button
+-addClassToMajorBtn: Button
+
+-
+_+start(primaryStage: Stage): void_
+_+addStudent(name: String, userName: String, 
+                     pass: String, major: Major)_
+_+addInstructor(name:String, userName: String, pass: String)_
+_+addAdmin(name:String, userName: String, pass: String)_
+_+addMajor(name:String, userName: String, pass: String)_
+_+addClassToMajor(classes: Classes, major: Major)_</panel_attributes><additional_attributes></additional_attributes></element></diagram>
