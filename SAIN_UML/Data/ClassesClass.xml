@@ -1,9 +1,10 @@
-<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>360</x><y>70</y><w>260</w><h>170</h></coordinates><panel_attributes>Package::datamodel.classes
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>360</x><y>30</y><w>260</w><h>210</h></coordinates><panel_attributes>Package::datamodel.classes
 Classes
 --
 -name: String
 -codeName: String
 -creditsGiven: int
+-crn: int * Key Field
 --
 +Class(name: String, codeName: String,
     creditsGiven: int)

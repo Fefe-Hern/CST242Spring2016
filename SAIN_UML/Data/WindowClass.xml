@@ -1,4 +1,4 @@
-<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>34</x><y>270</y><w>220</w><h>160</h></coordinates><panel_attributes>lw=2
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>34</x><y>200</y><w>220</w><h>160</h></coordinates><panel_attributes>lw=2
 LoginScreen
 --
 -userNameLabel: Label
@@ -10,23 +10,25 @@ LoginScreen
 -
 _+main(args: String): void_
 _+start(primaryStage: Stage): void_
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>120</y><w>220</w><h>130</h></coordinates><panel_attributes>lw=2
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>20</y><w>220</w><h>160</h></coordinates><panel_attributes>lw=2
 StudentSain
 --
 -majorLabel: Label
 -gpaLabel: Label
--classesNeeded: TextArea
--creditsTaken: Label
--classesTaken: TextArea
+-classesNeeded: ListView
+-specificClassView: ListView
+-creditsTakenLabel: Label
+-classesTakenArea: ListView
+-registerClassButton: Button
 -
-_+start(primaryStage: Stage): void_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>270</y><w>220</w><h>110</h></coordinates><panel_attributes>lw=2
+_+start(primaryStage: Stage): void_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>200</y><w>390</w><h>110</h></coordinates><panel_attributes>lw=2
 InstructorSain
 --
--classesTaught: TextArea
--studentTookClass: Button
+-classesTaught: ListView
+-gradeClass: Button
 -
 _+start(primaryStage: Stage): void_
-_+setStudentClassTaken(student: Student, classes: Classes): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>494</x><y>130</y><w>340</w><h>500</h></coordinates><panel_attributes>lw=2
+_+setStudentClassTaken(student: Student, classes: Classes): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>274</x><y>360</y><w>340</w><h>500</h></coordinates><panel_attributes>lw=2
 AdminSain
 --
 -newNameLabel: Label
