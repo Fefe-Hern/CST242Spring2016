@@ -3,20 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package studentBehavior;
+package component;
 
 /**
  *
  * @author Fefe-Hern <https://github.com/Fefe-Hern>
  */
-public class Student {
-    private Behavior behavior;
-
-    public Student() {
-    }
-
-    public void setBehavior(Behavior behavior) {
-        this.behavior = behavior;
-    }
+public abstract class AComponent {
+    public abstract void doJob();
     
 }

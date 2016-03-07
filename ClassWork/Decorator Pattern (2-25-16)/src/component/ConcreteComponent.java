@@ -3,20 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package studentBehavior;
+package component;
 
 /**
  *
  * @author Fefe-Hern <https://github.com/Fefe-Hern>
  */
-public class Student {
-    private Behavior behavior;
-
-    public Student() {
+public class ConcreteComponent extends AComponent{
+    @Override
+    public void doJob() {
+        System.out.println("Concrete Component: closed for change");
+        
     }
-
-    public void setBehavior(Behavior behavior) {
-        this.behavior = behavior;
-    }
-    
 }

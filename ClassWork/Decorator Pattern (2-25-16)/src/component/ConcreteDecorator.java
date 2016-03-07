@@ -3,20 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package studentBehavior;
+package component;
 
 /**
  *
  * @author Fefe-Hern <https://github.com/Fefe-Hern>
  */
-public class Student {
-    private Behavior behavior;
-
-    public Student() {
+public class ConcreteDecorator extends Decorator {
+    public void doJob() {
+        super.doJob();
+        System.out.println("Newly added behavior 1");
     }
-
-    public void setBehavior(Behavior behavior) {
-        this.behavior = behavior;
-    }
-    
 }
