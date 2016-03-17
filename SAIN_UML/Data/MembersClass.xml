@@ -1,9 +1,10 @@
-<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>320</x><y>53</y><w>260</w><h>210</h></coordinates><panel_attributes>Package::datamodel.accounts
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>133</y><w>260</w><h>210</h></coordinates><panel_attributes>Package::datamodel.accounts
 Members
 --
--userName: String *Key Field
+-userName: String
 -password: String
 -name: String
+-id: String *Key Field
 --
 +Members(username:String, password:String,
   firstName:String, lastName:String)
@@ -11,38 +12,39 @@ Members
 +getPassword(): String
 +setPassword(pass:String): void
 +getName():String
-+setName(name:String): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>283</y><w>210</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
++setName(name:String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>413</y><w>230</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
 Student
 --
 -major: Major
 -gpa: double
+-classesCompleted: ArrayList&lt;Classes&gt;
 --
 +Student(username:String,
       password:String, firstName:String, 
-      lastName:String, major:Major)
+      lastName:String, id: String,
+      major:Major)
 +getMajor(): Major
 +setMajor(major:Major): void
 +getGPA(): double
 +setGPA(number:Double): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>283</y><w>220</w><h>150</h></coordinates><panel_attributes>Package::datamodel.accounts
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>413</y><w>220</w><h>150</h></coordinates><panel_attributes>Package::datamodel.accounts
 Instructor
 --
 -classesTaught: ArrayList&lt;Classes&gt;
 --
 +Instructor(username:String,
       password:String, firstName:String, 
-      lastName:String)
+      lastName:String, id: String)
 +addClass(theClass:Classes): boolean
 +removeClass(theClass:Classes): boolean
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>283</y><w>210</w><h>100</h></coordinates><panel_attributes>Package::datamodel.accounts
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>413</y><w>210</w><h>100</h></coordinates><panel_attributes>Package::datamodel.accounts
 Admin
 --
 --
 +Admin(username:String,
       password:String, firstName:String, 
-      lastName:String)
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>253</y><w>100</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>253</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>253</y><w>110</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>393</y><w>240</w><h>290</h></coordinates><panel_attributes>Package::datamodel.accounts
+      lastName:String, id: String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>333</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>440</x><y>333</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>333</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>73</y><w>240</w><h>290</h></coordinates><panel_attributes>Package::datamodel.accounts
 MemberController
 --
 -model: Members
@@ -61,8 +63,8 @@ MemberController
 
 
 +addClass(theClass:Classes): boolean
-+removeClass(theClass:Classes): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>194</x><y>160</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
-&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>10;20;120;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>160</y><w>100</w><h>30</h></coordinates><panel_attributes>/Serializable/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>473</y><w>250</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
++removeClass(theClass:Classes): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>434</x><y>80</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>394</x><y>60</y><w>100</w><h>30</h></coordinates><panel_attributes>/Serializable/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>153</y><w>250</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
 MemberSaver
 --
 _-memberMap: HashMap&lt;String, Members&gt;_
@@ -73,4 +75,7 @@ _+delete(member:Members):boolean_
 _+acquire(username:String):Members_
 _+saveToFile():boolean_
 _+loadMembers():boolean_
-_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>371</x><y>30</y><w>140</w><h>20</h></coordinates><panel_attributes>For MemberSaver
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>51</x><y>80</y><w>160</w><h>40</h></coordinates><panel_attributes>Fernando Hernandez
+Member account package
+bg=red</panel_attributes><additional_attributes></additional_attributes></element></diagram>
