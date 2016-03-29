@@ -1,0 +1,133 @@
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>530</x><y>393</y><w>260</w><h>210</h></coordinates><panel_attributes>Package::datamodel.accounts
+Members
+--
+-userName: String
+-password: String
+-name: String
+-id: String *Key Field
+--
++Members(username:String, password:String,
+  firstName:String, lastName:String)
++getUserName(): String
++getPassword(): String
++setPassword(pass:String): void
++getName():String
++setName(name:String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>673</y><w>230</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
+Student
+--
+-major: Major
+-gpa: double
+-classesCompleted: ArrayList&lt;Classes&gt;
+--
++Student(username:String,
+      password:String, firstName:String, 
+      lastName:String, id: String,
+      major:Major)
++getMajor(): Major
++setMajor(major:Major): void
++getGPA(): double
++setGPA(number:Double): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>673</y><w>220</w><h>150</h></coordinates><panel_attributes>Package::datamodel.accounts
+Instructor
+--
+-classesTaught: ArrayList&lt;Classes&gt;
+--
++Instructor(username:String,
+      password:String, firstName:String, 
+      lastName:String, id: String)
++addClass(theClass:Classes): boolean
++removeClass(theClass:Classes): boolean
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>673</y><w>210</w><h>100</h></coordinates><panel_attributes>Package::datamodel.accounts
+Admin
+--
+--
++Admin(username:String,
+      password:String, firstName:String, 
+      lastName:String, id: String)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>593</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>80;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>593</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>780</x><y>593</y><w>110</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>820</x><y>333</y><w>240</w><h>290</h></coordinates><panel_attributes>Package::datamodel.accounts
+MemberController
+--
+-model: Members
+--
++MemberController(model:Members)
++getUserName(): String
++getPassword(): String
++setPassword(pass:String): void
++getName():String
++setName(name:String): void
+
++getMajor(): Major
++setMajor(major:Major): void
++getGPA(): double
++setGPA(number:Double): void
+
+
++addClass(theClass:Classes): boolean
++removeClass(theClass:Classes): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>634</x><y>340</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>594</x><y>320</y><w>100</w><h>30</h></coordinates><panel_attributes>/Serializable/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>203</y><w>240</w><h>180</h></coordinates><panel_attributes>Package::datamodel.accounts
+MemberSaver
+--
+_-memberMap: HashMap&lt;String, Members&gt;_
+_-file: File_
+--
+_+add(member:Members):boolean_
+_+delete(member:Members):boolean_
+_+acquire(username:String):Members_
+_+saveToFile():boolean_
+_+loadMembers():boolean_
+_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>451</x><y>330</y><w>140</w><h>20</h></coordinates><panel_attributes>For Savers
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>251</x><y>340</y><w>160</w><h>40</h></coordinates><panel_attributes>Fernando Hernandez
+Member account package
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>50</y><w>240</w><h>190</h></coordinates><panel_attributes>Package::datamodel.classes
+Classes
+--
+-name: String
+-codeName: String
+-creditsGiven: int
+-crn: int * Key Field
+--
++Class(name: String, codeName: String,
+    creditsGiven: int)
++getName(): String
++getcodeName(): String
++getCreditsGiven(): int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>400</y><w>220</w><h>190</h></coordinates><panel_attributes>Package::datamodel.classes
+ClassesSaver
+--
+_-ClassMap: HashMap&lt;String, Classes&gt;_
+_-file: File_
+--
+_+add(classes:Classes):boolean_
+_+delete(classes:Classes):boolean_
+_+get(codeName:String):Classes_
+_+saveToFile():boolean_
+_+loadClasses():boolean_
+_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>690</x><y>10</y><w>230</w><h>230</h></coordinates><panel_attributes>Package::datamodel.majors
+Major
+--
+-codeName: String *Key Field
+-name:String
+-GPAreq: double
+-totalCredits: int
+-classesNeeded: ArrayList&lt;Classes&gt;
+--
++Major(codeName:String, name:String,
+    GPAreq:double)
++getCodeName(): String
++getName(): String
++getGPAreq: double
++addClass(classes:Classes): boolean
++deleteClass(classes:Classes): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>600</y><w>210</w><h>180</h></coordinates><panel_attributes>Package::datamodel.major
+MajorSaver
+--
+_-majorMap: HashMap&lt;String, Major&gt;_
+_-file: File_
+--
+_+add(major:Majors):boolean_
+_+delete(major:Majors):boolean_
+_+acquire(codeName:String):Major_
+_+saveToFile():boolean_
+_+loadMajors():boolean_
+_+checkIfFileExists():boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>544</x><y>230</y><w>130</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>10;10;70;90</additional_attributes></element><element><id>Relation</id><coordinates><x>654</x><y>230</y><w>140</w><h>110</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;Implements&gt;&gt;</panel_attributes><additional_attributes>80;10;10;90</additional_attributes></element></diagram>

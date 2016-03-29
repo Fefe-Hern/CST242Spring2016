@@ -1,4 +1,4 @@
-<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>436</x><y>0</y><w>350</w><h>190</h></coordinates><panel_attributes>lw=2
+<diagram program="umletino" version="14.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>385</x><y>0</y><w>350</w><h>190</h></coordinates><panel_attributes>lw=2
 LoginScreen
 --
 -userNameLabel: Label
@@ -12,7 +12,7 @@ _+main(args: String): void_
 _+start(primaryStage: Stage): void_
 _-login(userName: String, password: String): boolean_
 _+produceStudentSain(student: Student, edit: boolean): boolean_
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>76</x><y>270</y><w>220</w><h>250</h></coordinates><panel_attributes>lw=2
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>25</x><y>270</y><w>220</w><h>250</h></coordinates><panel_attributes>lw=2
 StudentSain
 --
 -pane: GridPane
@@ -29,7 +29,7 @@ StudentSain
 -viewWhatIf: Button
 +editable: boolean
 _+start(primaryStage: Stage): void_
-_-generateWhatIf(major: Major): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>346</x><y>270</y><w>390</w><h>150</h></coordinates><panel_attributes>lw=2
+_-generateWhatIf(major: Major): boolean_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>295</x><y>270</y><w>390</w><h>150</h></coordinates><panel_attributes>lw=2
 InstructorSain
 --
 -pane: GridPane
@@ -38,8 +38,9 @@ InstructorSain
 -checkStudentSain: Button
 -
 _+start(primaryStage: Stage): void_
-_+setStudentClassTaken(student: Student, classes: Classes): boolean_
-_+viewStudentSain(id: String)_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>796</x><y>270</y><w>390</w><h>530</h></coordinates><panel_attributes>lw=2
+_+setStudentClassTaken(student: Student, classes: Classes,_
+_passed: boolean): boolean_
+_+viewStudentSain(id: String)_</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>745</x><y>270</y><w>390</w><h>530</h></coordinates><panel_attributes>lw=2
 AdminSain
 --
 -newNameLabel: Label
@@ -75,13 +76,13 @@ _+addInstructor(name:String, id: String, userName: String, pass: String)_
 _+addAdmin(name:String, id: String, userName: String, pass: String)_
 _+addMajor(name:String, userName: String, pass: String)_
 _+addClassToMajor(classes: Classes, major: Major)_
-_+viewStudentSain(id: String)_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>217</x><y>63</y><w>240</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
-instanceof Student</panel_attributes><additional_attributes>10;210;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>517</x><y>183</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
-instanceof Instructor</panel_attributes><additional_attributes>20;90;19;10</additional_attributes></element><element><id>Relation</id><coordinates><x>777</x><y>53</y><w>430</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
-instanceof Admin</panel_attributes><additional_attributes>409;220;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>367</x><y>430</y><w>370</w><h>60</h></coordinates><panel_attributes>viewStudentSain() asks for confirmation of Student's name, then
+_+viewStudentSain(id: String)_</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>166</x><y>63</y><w>240</w><h>230</h></coordinates><panel_attributes>lt=&lt;-
+instanceof Student</panel_attributes><additional_attributes>10;210;220;10</additional_attributes></element><element><id>Relation</id><coordinates><x>466</x><y>183</y><w>150</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+instanceof Instructor</panel_attributes><additional_attributes>20;90;19;10</additional_attributes></element><element><id>Relation</id><coordinates><x>726</x><y>53</y><w>430</w><h>240</h></coordinates><panel_attributes>lt=&lt;-
+instanceof Admin</panel_attributes><additional_attributes>409;220;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>316</x><y>430</y><w>370</w><h>60</h></coordinates><panel_attributes>viewStudentSain() asks for confirmation of Student's name, then
 produces an instance of StudentSain with registerClassButton
 deactivated.
-bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>51</x><y>530</y><w>280</w><h>80</h></coordinates><panel_attributes>generateWhatIf() lets the student select from
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>0</x><y>530</y><w>280</w><h>80</h></coordinates><panel_attributes>generateWhatIf() lets the student select from
 a list of Majors, then gets a deep-copy of
 the student, sets the Major to selected, and
 generates a 'new' SAIN with produceStudentSain()
