@@ -1,0 +1,160 @@
+Title:               Dow Jones Industrial Average©
+Series ID:           DJIA
+Source:              S&P Dow Jones Indices LLC
+Release:             Dow Jones Averages (Not a Press Release)
+Seasonal Adjustment: Not Seasonally Adjusted
+Frequency:           Monthly
+Aggregation Method:  Average
+Units:               Index
+Date Range:          2006-04-05 to 2016-04-06
+Last Updated:        2016-04-06 8:36 PM CDT
+Notes:               The Dow Jones Industrial Average provides a view of the US stock
+                     market and economy.  Originally, the index was made up of 12 stocks,
+                     it now contains 30 component companies in various industries.  For
+                     more components based information visit their website,
+                     http://www.djaverages.com/?go=industrial-components.  For more general
+                     information please visit their website,
+                     http://www.djaverages.com/?view=industrial&page=overview.
+                     
+                     Copyright © 2014, S&P Dow Jones Indices LLC. All rights reserved.
+                     Reproduction of Dow Jones Industrial Average in any form is prohibited
+                     except with the prior written permission of S&P Dow Jones Indices LLC
+                     (“S&P”). S&P does not guarantee the accuracy, adequacy,
+                     completeness or availability of any information and is not responsible
+                     for any errors or omissions, regardless of the cause or for the
+                     results obtained from the use of such information. S&P DISCLAIMS ANY
+                     AND ALL EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+                     ANY WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE
+                     OR USE. In no event shall S&P be liable for any direct, indirect,
+                     special or consequential damages, costs, expenses, legal fees, or
+                     losses (including lost income or lost profit and opportunity costs) in
+                     connection with subscriber’s or others’ use of Dow Jones
+                     Industrial Average.
+                     
+                     Permission to reproduce this series can be requested from
+                     index_services@spdji.com. More contact details are available from
+                     http://us.spindices.com/contact-us/, including phone numbers for all
+                     of its regional offices.
+
+DATE           VALUE
+2006-04-01  11241.77
+2006-05-01  11333.88
+2006-06-01  10997.97
+2006-07-01  11032.53
+2006-08-01  11257.35
+2006-09-01  11533.60
+2006-10-01  11963.12
+2006-11-01  12185.15
+2006-12-01  12377.62
+2007-01-01  12512.89
+2007-02-01  12631.48
+2007-03-01  12268.53
+2007-04-01  12754.80
+2007-05-01  13407.76
+2007-06-01  13480.21
+2007-07-01  13677.89
+2007-08-01  13239.71
+2007-09-01  13557.69
+2007-10-01  13901.28
+2007-11-01  13200.58
+2007-12-01  13406.99
+2008-01-01  12538.12
+2008-02-01  12419.57
+2008-03-01  12193.88
+2008-04-01  12656.63
+2008-05-01  12812.48
+2008-06-01  12056.67
+2008-07-01  11322.38
+2008-08-01  11530.75
+2008-09-01  11114.08
+2008-10-01   9176.71
+2008-11-01   8614.55
+2008-12-01   8595.56
+2009-01-01   8396.20
+2009-02-01   7690.50
+2009-03-01   7235.47
+2009-04-01   7992.12
+2009-05-01   8398.37
+2009-06-01   8593.00
+2009-07-01   8679.75
+2009-08-01   9375.06
+2009-09-01   9634.97
+2009-10-01   9857.34
+2009-11-01  10227.55
+2009-12-01  10433.44
+2010-01-01  10471.24
+2010-02-01  10214.51
+2010-03-01  10677.52
+2010-04-01  11052.15
+2010-05-01  10500.19
+2010-06-01  10159.27
+2010-07-01  10222.24
+2010-08-01  10350.40
+2010-09-01  10598.07
+2010-10-01  11044.49
+2010-11-01  11198.31
+2010-12-01  11465.26
+2011-01-01  11802.37
+2011-02-01  12190.00
+2011-03-01  12081.48
+2011-04-01  12434.88
+2011-05-01  12579.99
+2011-06-01  12097.31
+2011-07-01  12512.33
+2011-08-01  11326.62
+2011-09-01  11175.45
+2011-10-01  11515.93
+2011-11-01  11804.33
+2011-12-01  12075.68
+2012-01-01  12550.89
+2012-02-01  12889.05
+2012-03-01  13079.47
+2012-04-01  13030.75
+2012-05-01  12721.08
+2012-06-01  12544.90
+2012-07-01  12814.10
+2012-08-01  13134.90
+2012-09-01  13418.50
+2012-10-01  13380.65
+2012-11-01  12896.44
+2012-12-01  13144.18
+2013-01-01  13615.32
+2013-02-01  13967.33
+2013-03-01  14418.26
+2013-04-01  14675.91
+2013-05-01  15172.18
+2013-06-01  15035.75
+2013-07-01  15390.21
+2013-08-01  15195.35
+2013-09-01  15269.84
+2013-10-01  15289.29
+2013-11-01  15870.83
+2013-12-01  16095.77
+2014-01-01  16243.72
+2014-02-01  15958.44
+2014-03-01  16308.63
+2014-04-01  16399.50
+2014-05-01  16567.25
+2014-06-01  16843.75
+2014-07-01  16988.26
+2014-08-01  16775.15
+2014-09-01  17098.13
+2014-10-01  16701.87
+2014-11-01  17648.98
+2014-12-01  17754.24
+2015-01-01  17542.26
+2015-02-01  17945.41
+2015-03-01  17931.75
+2015-04-01  17970.51
+2015-05-01  18124.71
+2015-06-01  17927.22
+2015-07-01  17795.02
+2015-08-01  17061.59
+2015-09-01  16339.95
+2015-10-01  17182.28
+2015-11-01  17723.77
+2015-12-01  17542.86
+2016-01-01  16305.25
+2016-02-01  16299.90
+2016-03-01  17302.14
+2016-04-01         .
